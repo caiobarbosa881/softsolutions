@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="m-0" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftSolutions</title>
 </head>
-<body>
+<body class="mx-0 my-0">
     <nav class="flex items-center justify-between flex-wrap bg-white p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img width="75" height="25" src="src/images/softsolutions_logo.png" alt="Logo da empresa SoftSolutions">
@@ -33,45 +33,43 @@
           </div>
         </div>
       </nav>
-      <div class=" w-sreen container">
-        <div class="w-screen">
-          <div class="relative">
-            <div class="slide relative">
-              <img class="w-full h-[500px] object-cover"
-                  src="src/images/programador-trabalhando.jpg" alt="Pessoa programando em um notebook">
-              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Temos os Melhores Programadores.</div>
-            </div>
-      
-            <div class="slide relative">
-              <img class="w-full h-[500px] object-cover"
-                  alt="Programadora codando em seu notebook"
-                  src="src/images/mulher_codando_com_notebook_e_celular.jpg">
-              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Desenvolvimento de Aplicativos Incluso.</div>
-            </div>
-      
-            <div class="slide relative">
-              <img class="w-full h-[500px] object-cover"
-                  src="src/images/programador-trabalhando-2.jpeg">
-              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Entregas ápidas.
-              </div>
-            </div>
-      
-            <!-- The previous button -->
-            <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                onclick="moveSlide(-1)">❮</a>
-      
-            <!-- The next button -->
-            <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
-                onclick="moveSlide(1)">❯</a>
+      <div>
+        <div class="relative">
+          <div class="slide relative">
+            <img class="w-full h-[500px] object-cover"
+                src="src/images/programador-trabalhando.jpg" alt="Pessoa programando em um notebook">
+            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Temos os Melhores Programadores.</div>
           </div>
-          <br>
       
-          <!-- The dots -->
-          <div class="flex justify-center items-center space-x-5">
-            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
-            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
-            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+          <div class="slide relative">
+            <img class="w-full h-[500px] object-cover"
+                alt="Programadora codando em seu notebook"
+                src="src/images/mulher_codando_com_notebook_e_celular.jpg">
+            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Desenvolvimento de Aplicativos Incluso.</div>
           </div>
+      
+          <div class="slide relative">
+            <img class="w-full h-[500px] object-cover"
+                src="src/images/programador-trabalhando-2.jpeg">
+            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Entregas ápidas.
+            </div>
+          </div>
+      
+          <!-- The previous button -->
+          <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+              onclick="moveSlide(-1)">❮</a>
+      
+          <!-- The next button -->
+          <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+              onclick="moveSlide(1)">❯</a>
+        </div>
+        <br>
+      
+        <!-- The dots -->
+        <div class="flex justify-center items-center space-x-5">
+          <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+          <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+          <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
         </div>
       </div>
       <div class="container mx-auto py-10">
