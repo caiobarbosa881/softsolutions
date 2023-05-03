@@ -8,8 +8,11 @@ Teste técnico - Página Web que promove o trabalho de uma empresa de desenvolvi
 
 # Tecnologias utilizadas
 HTML
+<br>
 CSS
+<br>
 JavaScript
+<br>
 Tailwind CSS
 
 # Autor
