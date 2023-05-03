@@ -7,65 +7,70 @@
     <title>SoftSolutions</title>
 </head>
 <body class="mx-0 my-0">
-    <nav class="flex items-center justify-between flex-wrap bg-white p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-white p-6 fixed top-0 w-full z-50">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img width="75" height="25" src="src/images/softsolutions_logo.png" alt="Logo da empresa SoftSolutions">
         </div>
+      
         <div class="block lg:hidden">
-          <button class="flex items-center border-zinc-950 px-3 py-2 border rounded text-black hover:text-white hover:border-black">
-            <svg class="fill-black h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-500 hover:text-teal-500 hover:border-teal-500">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"/>
+            </svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow flex justify-end w-full pr-5">
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold mr-4 transition duration-500 ease-in-out">
+      
+        <div id="nav-content" class="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block pt-6 lg:pt-0 hidden">
+          <div class="text-sm lg:flex-grow flex justify-end w-full pr-5 lg:text-center">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold md:mx-2 lg:mx-4 transition duration-500 ease-in-out">
               Página Inicial
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold mr-4 transition duration-500 ease-in-out">
-              Serviços
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold md:mx-2 lg:mx-4 transition duration-500 ease-in-out">
+              Nossos Clientes
             </a>
-            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold transition duration-500 ease-in-out">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold md:mx-2 lg:mx-4 transition duration-500 ease-in-out">
+              Equipe
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-teal-500 hover:font-bold md:mx-2 lg:mx-4 transition duration-500 ease-in-out">
               Contato
             </a>
           </div>
-          <div>
-            <a href="#" class="w-28 h-9 inline-block bg-green-600 text-sm px-4 py-2 leading-none border rounded text-white border-green-600 hover:text-teal-500 hover:bg-amber-100 mt-4 lg:mt-0 transition duration-500 ease-in-out">Registrar-se</a>
+      
+          <div class="mt-4 lg:mt-0">
+            <a href="#" class="w-full md:w-auto lg:w-28 h-9 inline-block bg-green-600 text-sm px-4 py-2 leading-none border rounded text-white border-green-600 hover:text-teal-500 hover:bg-amber-100 transition duration-500 ease-in-out block md:inline-block flex items-center justify-center">Registrar-se</a>
           </div>
         </div>
       </nav>
       <div>
         <div class="relative">
+            <div class="slide relative">
+                <img class="w-full h-[500px] object-cover" src="src/images/programador-trabalhando.jpg" alt="Pessoa programando em um notebook">
+                <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white text-lg">Profissionais qualificados.</div>
+            </div>
+            
           <div class="slide relative">
-            <img class="w-full h-[500px] object-cover"
-                src="src/images/programador-trabalhando.jpg" alt="Pessoa programando em um notebook">
-            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Temos os Melhores Programadores.</div>
-          </div>
-      
-          <div class="slide relative">
-            <img class="w-full h-[500px] object-cover"
+            <img class="w-full h-[500px] object-cover object-center"
                 alt="Programadora codando em seu notebook"
                 src="src/images/mulher_codando_com_notebook_e_celular.jpg">
-            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Desenvolvimento de Aplicativos Incluso.</div>
+            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white text-lg">Desenvolvimento de Aplicativos Incluso.</div>
           </div>
       
           <div class="slide relative">
-            <img class="w-full h-[500px] object-cover"
+            <img class="w-full h-[500px] object-cover object-bottom"
                 src="src/images/programador-trabalhando-2.jpeg">
-            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Entregas ápidas.
+            <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white text-lg">Entregas rápidas.
             </div>
           </div>
       
-          <!-- The previous button -->
           <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
               onclick="moveSlide(-1)">❮</a>
       
-          <!-- The next button -->
           <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
               onclick="moveSlide(1)">❯</a>
         </div>
         <br>
       
-        <!-- The dots -->
         <div class="flex justify-center items-center space-x-5">
           <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
           <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
@@ -124,7 +129,7 @@
             </div>
             <div class="bg-white p-4">
                 <img src="src/images/programador2.jpg" alt="Foto do programador">
-                <h3 class="text-lg font-bold mt-4">Nome do programador</h3>
+                <h3 class="text-lg font-bold mt-4">Carlos Augusto</h3>
                 <p class="text-gray-500">Cargo de programador</p>
               </div>
           </div>
@@ -177,7 +182,6 @@
               </div>
             </div>
           
-            <!--Copyright section-->
             <div
               class="bg-neutral-300 p-4 text-center text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
               © 2023 Copyright:
