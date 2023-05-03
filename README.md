@@ -1,5 +1,7 @@
 # Soft Solutions 
 Teste técnico - Página Web que promove o trabalho de uma empresa de desenvolvimento de Software.
+<br>
+
 ![Site Completo](src/images/site_completo.jfif)
 # Como Executar o Projeto
 
