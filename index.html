@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoftSolutions</title>
+</head>
+<body>
+    <nav class="flex items-center justify-between flex-wrap bg-white p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img width="75" height="25" src="src/images/softsolutions_logo.png" alt="Logo da empresa SoftSolutions">
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center border-zinc-950 px-3 py-2 border rounded text-black hover:text-white hover:border-black">
+            <svg class="fill-black h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow flex justify-end w-full pr-5">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
+              Página Inicial
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white mr-4">
+              Serviços
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-black hover:text-white">
+              Contato
+            </a>
+          </div>
+          <div>
+            <a href="#" class="w-28 h-9 inline-block bg-green-600 text-sm px-4 py-2 leading-none border rounded text-white border-green-600 hover:text-teal-500 hover:bg-amber-100 mt-4 lg:mt-0">Registrar-se</a>
+          </div>
+        </div>
+      </nav>
+      <div class=" w-sreen container">
+        <div class="w-screen">
+          <div class="relative">
+            <div class="slide relative">
+              <img class="w-full h-[500px] object-cover"
+                  src="src/images/programador-trabalhando.jpg" alt="Pessoa programando em um notebook">
+              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Temos os Melhores Programadores.</div>
+            </div>
+      
+            <div class="slide relative">
+              <img class="w-full h-[500px] object-cover"
+                  alt="Programadora codando em seu notebook"
+                  src="src/images/mulher_codando_com_notebook_e_celular.jpg">
+              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Desenvolvimento de Aplicativos Incluso.</div>
+            </div>
+      
+            <div class="slide relative">
+              <img class="w-full h-[500px] object-cover"
+                  src="src/images/programador-trabalhando-2.jpeg">
+              <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">Entregas Rápidas.
+              </div>
+            </div>
+      
+            <!-- The previous button -->
+            <a class="absolute left-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                onclick="moveSlide(-1)">❮</a>
+      
+            <!-- The next button -->
+            <a class="absolute right-0 top-1/2 p-4 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white hover:text-amber-500 cursor-pointer"
+                onclick="moveSlide(1)">❯</a>
+          </div>
+          <br>
+      
+          <!-- The dots -->
+          <div class="flex justify-center items-center space-x-5">
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+            <div class="dot w-4 h-4 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
